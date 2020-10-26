@@ -1,0 +1,194 @@
+@font-face{
+	font-family: 'basis';
+	src: url('./fonts/basis-grotesque-regular.woff');
+	src: url('./fonts/basis-grotesque-regular.woff2');
+}
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* General Styles */
+
+:root {
+	--black: #111;
+	--white: #fff;
+	--blue: #281E8C;
+	--grey: #f3f4f7;
+	--basis-regular: 'basis';
+}
+
+html{
+	box-sizing: border-box;
+}
+
+*, *:before, *:after{
+	box-sizing: inherit;
+}
+
+body{
+	background-color: var(--black);
+	font-family: var(--basis-regular);
+	overflow-x: hidden;
+}
+
+
+/* Type Styles */
+
+h1{
+	font-size: 56px;
+	line-height: 1;
+	padding: 16px 0;
+}
+
+h2{
+	font-size: 12px;
+	font-family: 'basis grotesque mono';
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	padding: 8px 0;
+}
+
+p{	
+	font-size: 16px;
+	line-height: 24px;
+	padding: 16px 0;
+}
+
+a{
+	text-decoration: none;
+	color: var(--black);
+	font-size: inherit;
+	line-height: 24px;
+}
+
+.large{	
+	font-size: 24px;
+	line-height: 32px;
+}
+
+.small{	
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.xxl{	
+	font-size: 32px;
+	line-height: 40px;
+}
+
+.xxxl{	
+	font-size: 56px;
+	line-height: 56px;
+}
+
+
+/* Layout */
+
+img{
+	width: 100%;
+	height: auto;
+}
+
+section{
+	width: 100%;
+	padding: 0 48px;
+	background-color: var(--white);
+}
+
+section.fw{
+	padding: 0;
+}
+
+.row{
+	width: 100%;
+	display: flex;
+    justify-content: space-between;
+}
+
+.row{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.col-fw{
+	width: 100%;
+	padding: 0 16px; 
+}
+.col-half{
+	width: 50%;
+	padding: 0 16px; 
+}
+
+.type-wrapper{
+	width: 100%;
+	padding: 0 32px;
+}
+
+
+/* Spacing */
+
+.spacer{
+	width: 100%;
+	height: 128px;
+	background-color: var(--white);
+}
+
+.padding-top{
+	padding-top: 32px;
+}
+
+.padding-bottom{
+	padding-bottom: 32px;
+}
+
+.padding-top-small{
+	padding-top: 16px;
+}
