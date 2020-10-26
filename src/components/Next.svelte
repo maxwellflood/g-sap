@@ -14,7 +14,7 @@
          padding-bottom: 144px;
          background-color: var(--white);
          overflow: hidden;
-         transition: background-color .2s ease; 
+         transition: background-color .3s ease; 
     }
     .next-wrapper:hover{
         background-color: var(--grey);
@@ -37,7 +37,7 @@
          height:40px;
          width: 150px;
          transform: translateX(-100px);
-         transition: transform 0.4s ease;
+         transition: transform 0.3s ease;
     }
     img.arrow-icon{
         max-width: 50px;
@@ -50,7 +50,7 @@
          width: calc(100% - 128px);
          display: flex;
          justify-content: center;
-         transition: transform 0.4s ease;
+         transition: transform 0.3s ease;
          transform: translateY(160px);
      }
      .next-wrapper:hover > .row .col-fw .img-wrapper{

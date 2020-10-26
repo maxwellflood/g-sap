@@ -2,7 +2,6 @@
     export let mode = null
     export let color = null
     export let type = null
-    export let href = null
 </script>
 
 

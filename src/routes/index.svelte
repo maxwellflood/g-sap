@@ -23,9 +23,9 @@
 </script>
 
 <style>
-    /* section:last-child{
-        padding-bottom: 64px
-    } */
+    .projects{
+        padding-bottom: 16px;
+    }
 	.project{
          width: 100%;
          line-height: 0;
