@@ -3,15 +3,22 @@
 </script>
 
 <nav class="">
-    <div class="nav-logo-wrapper">
-        <div class="nav-logo">
-            <img src="./images/g-logo.svg" alt="">
+
+    <a href=".">
+        <div class="nav-logo-wrapper">
+            <div class="nav-logo">
+                <img src="./images/g-logo.svg" alt="">
+            </div>
         </div>
-    </div>
+    </a>
+    
     <div class="nav-menu">
-        <Button href="projects" mode="nav-btn" color="transparent">Projects</Button>
+        <a class="nav-link" href="projects">Projects</a>
+        <a class="nav-link" href="about">About</a>
+        <a class="nav-link" href="contact">Contact</a>
+        <!-- <Button href="projects" mode="nav-btn" color="transparent">Projects</Button>
         <Button mode="nav-btn" color="transparent">About</Button>
-        <Button mode="nav-btn" color="transparent">Contact</Button>
+        <Button mode="nav-btn" color="transparent">Contact</Button> -->
     </div>
 </nav>
 
@@ -47,6 +54,22 @@
     .nav-logo{
         width: 13px;
         height: 18px;
+    }
+
+    .nav-link{
+        font-family: 'basis grotesque mono';
+        padding: 12px 16px;
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: uppercase;
+        background: rgba(255,255,255,0);
+        color: var(--black);
+        border-radius: 4px;
+        outline: none;
+        cursor: pointer;
+        transition: 0.5s background-color ease;
+        margin-left: 8px;
+        letter-spacing: 2px;
     }
     
 </style>

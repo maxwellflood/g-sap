@@ -3,6 +3,7 @@
 
 	import Splash from '../components/Splash.svelte'
     import Header from '../components/Header.svelte'
+    import Next from '../components/Next.svelte'
 
 
     let projects = [
@@ -22,12 +23,17 @@
 </script>
 
 <style>
+    /* section:last-child{
+        padding-bottom: 64px
+    } */
 	.project{
          width: 100%;
+         line-height: 0;
      }
-     .all-projects{
-         padding-top: 128px;
-         padding-bottom: 144px;
+     .next-image{
+         position: relative;
+         margin: auto;
+         width: 50%;
      }
 </style>
 
@@ -35,36 +41,32 @@
 	<title>Grotesk Studio</title>
 </svelte:head>
 
-<div>
-    <div class="spacer"></div>
-    <Splash splashSubheader="Project" splashHeader="Airgraft"/>
 
-    <Header>
-        <div slot="text-right">
-            <h2>Creating brands with character</h2>
-            <p class="xxl">
-                We’re Grotesk, a creative studio that exists to create compelling and engaging brand experiences through research, strategy and design.
-            </p>
-        </div>
-    </Header>
+<div class="spacer"></div>
+<Splash splashSubheader="Project" splashHeader="Airgraft"/>
 
-    <section class="projects">
-        {#each projects as project}
-            <div class="row padding-bottom">
-                <div class="project">
-                    <img src="{project.image}" alt="">
-                </div>
-            </div>
-        {/each}
-    </section>
-    
-    <section class="all-projects">
-        <div class="row">
-            <div class="col-fw">
-                 <div class="type-wrapper">
-                    <p class="xxl">All projects</p>
-                </div>
+<Header>
+    <div slot="text-right">
+        <h2>Creating brands with character</h2>
+        <p class="xxl">
+            We’re Grotesk, a creative studio that exists to create compelling and engaging brand experiences through research, strategy and design.
+        </p>
+    </div>
+</Header>
+
+<section class="projects">
+    {#each projects as project}
+        <div class="row padding-bottom">
+            <div class="project">
+                <img src="{project.image}" alt="">
             </div>
         </div>
-    </section>
-</div>
+    {/each}
+</section>
+
+<Next text="All projects" link="projects">
+    <img class="next-image" slot="next-image" src="./images/projects/bae.jpg" alt="">
+</Next>
+
+
+

@@ -6,9 +6,10 @@
 </script>
 
 
-<button href={href} class="{mode} {color}" {type} on:click>
+<button class="{mode} {color}" {type} on:click>
     <slot/>
 </button>
+
 
 
 <style>
@@ -17,8 +18,6 @@
         font-size: 14px;
         line-height: 16px;
         text-transform: uppercase;
-        
-        
         border: none;
         background: var(--black);
         color: var(--white);
