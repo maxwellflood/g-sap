@@ -25,7 +25,6 @@
          margin: auto;
          width: 50%;
      }
-
      .padding-bottom-lrg{
         padding-bottom: 64px;
     }

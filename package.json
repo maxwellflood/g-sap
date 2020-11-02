@@ -1,6 +1,6 @@
 {
-  "name": "TODO",
-  "description": "TODO",
+  "name": "grotesk",
+  "description": "Grotesk is an independant creative studio based in London",
   "version": "0.0.1",
   "scripts": {
     "dev": "sapper dev",

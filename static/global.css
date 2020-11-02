@@ -61,6 +61,7 @@ table {
 	--white: #fff;
 	--blue: #281E8C;
 	--grey: #f3f4f7;
+	--grey-01:#292929;
 	--basis-regular: 'basis';
 }
 
@@ -167,10 +168,23 @@ section.fw{
 	width: 100%;
 	padding: 0 16px; 
 }
+
 .col-half{
 	width: 50%;
 	padding: 0 16px; 
 }
+
+.col-three-quarters{
+	width: 75%;
+	padding: 0 16px; 
+}
+
+.col-quarter{
+	width: 25%;
+	padding: 0 16px; 
+}
+
+
 
 .type-wrapper{
 	width: 100%;
@@ -196,6 +210,10 @@ section.fw{
 
 .padding-bottom-lrg{
 	padding-bottom: 64px;
+}
+
+.padding-bottom-xl{
+	padding-bottom: 80px;
 }
 
 .padding-top-small{

@@ -6,25 +6,6 @@
 </script>
 
 <style>
-    
-    select{
-        /* width: 100%; */
-        height: 40px;
-        background: var(--white);
-        font-size: 32px;
-        color: var(--black);
-        border: none;
-        outline: none;
-        margin: 0px;
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        appearance: none;
-        /* background-image: url(./assets/chev-down.svg); */
-        background-repeat: no-repeat, repeat;
-        background-position: right 0px top 50%, 0 0;
-        background-size: 16px auto, 100%;
-        cursor: pointer;
-    }
 
     .header-wrapper{
         background-color: var(--white);

@@ -1,5 +1,6 @@
 <script>
     import Button from './Button.svelte'
+
 </script>
 
 <nav class="">
@@ -16,9 +17,6 @@
         <a class="nav-link" href="projects">Projects</a>
         <a class="nav-link" href="about">About</a>
         <a class="nav-link" href="contact">Contact</a>
-        <!-- <Button href="projects" mode="nav-btn" color="transparent">Projects</Button>
-        <Button mode="nav-btn" color="transparent">About</Button>
-        <Button mode="nav-btn" color="transparent">Contact</Button> -->
     </div>
 </nav>
 
