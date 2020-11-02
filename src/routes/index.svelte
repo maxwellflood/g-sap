@@ -4,22 +4,12 @@
 	import Splash from '../components/Splash.svelte'
     import Header from '../components/Header.svelte'
     import Next from '../components/Next.svelte'
+    import projectsStore from '../components/projects-store.js'
 
+    let projects = $projectsStore
+    const projectsHome = projects.slice(0,4)
+    console.log(projectsHome)
 
-    let projects = [
-        {
-            image : './images/projects/ae.jpg',
-            client: 'Aethos'
-        },
-        {
-            image : './images/projects/ag.jpg',
-            client: 'Airgraft'
-        },
-        {   
-            image : './images/projects/cat.jpg',
-            client: 'CAT'
-        },
-    ]   
 </script>
 
 <style>
@@ -35,6 +25,11 @@
          margin: auto;
          width: 50%;
      }
+
+     .padding-bottom-lrg{
+        padding-bottom: 64px;
+    }
+
 </style>
 
 <svelte:head>
@@ -55,8 +50,8 @@
 </Header>
 
 <section class="projects">
-    {#each projects as project}
-        <div class="row padding-bottom">
+    {#each projectsHome as project}
+        <div class="row padding-bottom-lrg">
             <div class="project">
                 <img src="{project.image}" alt="">
             </div>

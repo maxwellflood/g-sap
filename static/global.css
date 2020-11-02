@@ -95,6 +95,16 @@ h2{
 	padding: 8px 0;
 }
 
+h3{
+	font-size: 32px;
+	line-height: 40px;
+}
+
+h4{
+	font-size: 18px;
+	line-height: 24px;
+}
+
 p{	
 	font-size: 16px;
 	line-height: 24px;
@@ -149,12 +159,7 @@ section.fw{
 .row{
 	width: 100%;
 	display: flex;
-    justify-content: space-between;
-}
-
-.row{
-	width: 100%;
-	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
@@ -187,6 +192,10 @@ section.fw{
 
 .padding-bottom{
 	padding-bottom: 32px;
+}
+
+.padding-bottom-lrg{
+	padding-bottom: 64px;
 }
 
 .padding-top-small{
